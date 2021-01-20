@@ -10,7 +10,13 @@ namespace Donguler
             // array = dizi
             string[] kurslar = new string[] {"yazlım yetiştirici kampı", 
             "temel programlama kursu",
-            "java", "python", "c++" };
+            "java", "python", "c++ " };
+
+
+
+
+
+
 
 
             for (int i = 0; i < kurslar.Length; i++)
