@@ -4,10 +4,10 @@ using System.Text;
 
 namespace MyDictionary
 {
-    class MyDictionary<K, V>
+    public class MyDictionary<K, V>
     {
-        K[] keys;
-        V[] values;
+        public K[] keys;
+        public V[] values;
         public MyDictionary()
         {
             keys = new K[0];
@@ -21,9 +21,11 @@ namespace MyDictionary
             for (int i = 0; i < tempArray1.Length; i++)
             {
                 keys[i] = tempArray1[i];
+                
             }
 
             keys[keys.Length - 1] = key;
+            //Console.WriteLine(keys[0]);
 
             V[] tempArray2 = values;
             values = new V[values.Length + 1];
@@ -34,5 +36,6 @@ namespace MyDictionary
 
             values[values.Length - 1] = value;
         }
+       
     }
 }
